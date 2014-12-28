@@ -1,25 +1,14 @@
 \documentclass[11pt]{article}
 \usepackage{amsmath,textcomp,amssymb,geometry,graphicx,enumerate}
 \usepackage{hyperref}
-
-
-\def\Name{Ted Xiao}  % Your name
-
-\title{Balance Problem Algorithms}
-\author{\Name}
-
-\newenvironment{qparts}{\begin{enumerate}[{(}a{)}]}{\end{enumerate}}
-\def\endproofmark{$\Box$}
-\newenvironment{proof}{\par{\bf Proof}:}{\endproofmark\smallskip}
-
-\textheight=9in
-\textwidth=6.5in
-\topmargin=-.75in
-\oddsidemargin=0.25in
-\evensidemargin=0.25in
-
+\title{An Analysis of the Balance Problem}
+\date{December 27, 2014}
+\author{Ted Xiao\\ UC Berkeley EECS, 2017}
 
 \begin{document}
+
+\maketitle
+
 The analysis was inspired by \href{https://www.youtube.com/watch?v=wVPCT1VjySA}{a problem involving Santa Claus, 1024 wrapped gifts (with one slightly heavier), and a balance.}\\
  
 \textit{The question:} What is the least number of weighs to find out which gift out of the 1024 is the slightly heavier one? \\\\
