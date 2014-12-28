@@ -1,0 +1,33 @@
+<DOCTYPE !html>
+
+
+<html>
+    <div id="canvas" style="position: relative; width: 100px; height: 100px; border: solid red  1px;">
+        <div id="nearest" style="position: absolute; width: 10px; height: 10px; background: yellow;">
+        </div>
+    </div>
+    <script>
+        var canvasOffset = $("div#canvas").offset(),
+        // Assuming that the space between the points is 10 pixels. Correct this if necessary.
+        var cellSpacing = 10;
+
+$("div#canvas").mousemove(function(event) {
+    event = event || window.event;
+    $("div#nearest").css({
+        top: Math.round((mouseCoordinate(event, "X") - canvasOffset.left) / cellSpacing) * cellSpacing + "px",
+        left: Math.round((mouseCoordinate(event, "Y") - canvasOffset.top) / cellSpacing) * cellSpacing + "px"
+    });
+});
+
+// Returns the one half of the current mouse coordinates relative to the browser window.
+// Assumes the axis parameter to be uppercase: Either "X" or "Y".
+function mouseCoordinate(event, axis) {
+    var property = (axis == "X") ? "scrollLeft" : "scrollTop";
+    if (event.pageX) {
+        return event["page"+axis];
+    } else {
+        return event["client"+axis] + (document.documentElement[property] ? document.documentElement[property] : document.body[property]);;
+    }
+};
+    </script>
+    </html>

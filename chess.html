@@ -1,0 +1,54 @@
+<DOCTYPE !html>
+
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="chess.css" />
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		<title>Chess</title>
+	</head>
+	<body>
+	<!-- Support libraries from Yahoo YUI project -->  
+	<script type="text/javascript"  src="http://chesstempo.com/js/pgnyui.js">  
+	</script>   
+	<script type="text/javascript"  
+    	src="http://chesstempo.com/js/pgnviewer.js">  
+	</script>  
+	<link  
+ 		type="text/css"   
+ 		rel="stylesheet"   
+ 		href="http://chesstempo.com/css/board-min.css">  
+	</link>  
+	<script>  
+		new PgnViewer(  
+  		{ boardName: "game1", 
+    	pgnFile: "2012SCCChamps.pgn",  
+    	pauseBetweenMoves: 500  
+  }  
+);  
+</script>   
+		<div id="header"> 
+			<div id="menubar">
+				<ul>
+					<a href="http://www.tedxiao.com/index.html"><li>Home</li></a>
+					<a href="http://www.tedxiao.com/about.html"><li>About Me</li></a>
+					<a href="http://www.tedxiao.com/resume.pdf"><li>Resume</li></a>
+					<a href="http://www.tedxiao.com/projects.html"><li>Projects</li></a>
+				</ul>
+			</div>
+		<h2>Ted's Chess Highlights</h2>
+		</div>
+		<div id="middle">
+			<p>Chess Highlights!</p>
+			<div id="game1-container"></div>  
+			<div id="game1-moves"></div>  
+		</div>
+		<div id="footer">
+			<div class="button">
+				<a href="mailto:ted@tedxiao.com" target="_blank">Email me!</a>
+			</div>
+			<p>&#169 2014 Ted Xiao</p>	
+		</div>
+	</body>
+
+
+</html>
