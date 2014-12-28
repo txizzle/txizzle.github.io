@@ -81,6 +81,10 @@ li:hover {
 	margin-right: auto;
 	color: white;
 }
+
+.blog a {
+    color: black
+}
 #about {
 	text-align: block;
 	font-family: Ubuntu;
