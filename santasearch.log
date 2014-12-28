@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.24)  27 DEC 2014 22:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.1.24)  28 DEC 2014 11:46
 entering extended mode
 **santasearch.tex
 (C:\Users\Ted\Documents\GitHub\txizzle.github.io\santasearch.tex
@@ -455,8 +455,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¯ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--26
+
+ []
+
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -515,47 +535,22 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--44
+Underfull \hbox (badness 10000) in paragraph at lines 27--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--44
+Underfull \hbox (badness 10000) in paragraph at lines 27--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--44
+Underfull \hbox (badness 10000) in paragraph at lines 27--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--44
+Underfull \hbox (badness 10000) in paragraph at lines 27--45
 
  []
 
@@ -571,35 +566,37 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
 
 (C:\Users\Ted\Documents\GitHub\txizzle.github.io\santasearch.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
 Package rerunfilecheck Info: File `santasearch.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 6709 strings out of 493921
- 97481 string characters out of 3144882
- 184857 words of memory out of 3000000
- 9936 multiletter control sequences out of 15000+200000
- 10786 words of font info for 41 fonts, out of 3000000 for 9000
+ 6715 strings out of 493921
+ 97550 string characters out of 3144882
+ 185857 words of memory out of 3000000
+ 9938 multiletter control sequences out of 15000+200000
+ 11391 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,6n,26p,961b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,6n,26p,961b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on santasearch.pdf (3 pages, 97541 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on santasearch.pdf (3 pages, 116070 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
+ 63 PDF objects out of 1000 (max. 8388607)
+ 7 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
