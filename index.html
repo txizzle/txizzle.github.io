@@ -1,33 +1,289 @@
-<DOCTYPE !html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="index.css" />
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-		<title>Ted Xiao</title>
-	</head>
-	<body>
-		<div id="header"> 
-			<div id="menubar">
-				<ul>
-					<a href="index.html"><li>Home</li></a>
-					<a href="about.html"><li>About Me</li></a>
-					<a href="resume.pdf"><li>Resume</li></a>
-					<a href="projects.html"><li>Projects</li></a>
-				</ul>
-			</div>
-		<h2>Home</h2>
-		</div>
-		<div id="middle">
-			<p class="normal">Welcome to my website! This site is still a work in progress, so expect updates. I'll be working on this and other side projects as my spare time allows.</p>
-		</div>
-		<div id="footer">
-			<div class="button">
-				<a href="mailto:t.xiao@berkeley.edu" target="_blank">Email me!</a>
-			</div>
-			<p class="normal">&#169 2014 Ted Xiao</p>	
-		</div>
-	</body>
+<head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ted Xiao</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/home.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#interests">Interests</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Ted Xiao</h1>
+            <h3>UC Berkeley EECS, 2017</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Who Am I?</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>I'm a student, an explorer, and a developer.</h2>
+                    <p class="lead">I seek to understand the world around me. I ask 'Why?' and pursue answers to my innate curiosity. I apply my experience to help change the world in whatever positive ways I can. I strive to live a balanced, continuously developing lifestyle.</a></p>
+            <br>
+            <a href="#interests" class="btn btn-dark btn-lg">How?</a>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Interests -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="interests" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Interests</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="project-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-laptop fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Coding</strong>
+                                </h4>
+                                <p>From front-end to back-end, I love creating beautiful code.</p>
+                                <a href="#projects" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-suitcase fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Consulting</strong>
+                                </h4>
+                                <p>I enjoy solving high-level strategy problems analytically.</p>
+                                <a href="http://voyagerconsulting.org/" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-futbol-o fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Sports</strong>
+                                </h4>
+                                <p>Keeping active is important to me. I play on the Cal Roller Hockey Team.</p>
+                                <a href="http://wcrhl.com/" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-puzzle-piece fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Chess</strong>
+                                </h4>
+                                <p>I play chess competitively and am a candidate master.</p>
+                                <a href="http://main.uschess.org/assets/msa_joomla/MbrDtlMain.php?12901869" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1></h1>
+        </div>
+    </aside>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>My Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="project-item">
+                                <a href="#">
+                                    <img class="img-project img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="project-item">
+                                <a href="#">
+                                    <img class="img-project img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="project-item">
+                                <a href="#">
+                                    <img class="img-project img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="project-item">
+                                <a href="#">
+                                    <img class="img-project img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <!--a href="#" class="btn btn-dark">View More Items</a> -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>See More</h3>
+                    <a href="#" class="btn btn-lg btn-light">Resume</a>
+                    <a href="https://github.com/txizzle" class="btn btn-lg btn-dark">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <section id = "contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Ted Xiao</strong>
+                    </h4>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="mailto:filler@filler.com"><i class="fa fa-envelope-o fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Ted Xiao 2015</p>
+                </div>
+            </div>
+        </div>
+            </section>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
 
 </html>
