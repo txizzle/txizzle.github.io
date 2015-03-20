@@ -11,7 +11,7 @@
 
 #menubar {
 	left: 40%;
-	margin-left: -160px;
+	margin: 0 -90;
 	position: absolute;
     top: -10px;
 }
