@@ -166,8 +166,12 @@ hr.small {
 
 .about {
     padding: 450px 0;
-    color: black;
-    background-color: #abd;
+    color: white;
+    background: url(../img/night.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 /* Projects */
