@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,textcomp,amssymb,geometry,graphicx,enumerate}
+
+\def\Name{Ted Xiao}  % Your name
+\def\SID{24452530}  % Your student ID number
+\def\Login{cs170-vg} % Your login (your class account, cs170-xy)
+\def\Homework{9}%Number of Homework
+\def\Session{Fall 2014}
+
+
+\title{CS170--Fall 2014 --- Writeup to Homework \Homework}
+\author{\Name, SID \SID, \texttt{\Login}}
+\markboth{CS170--\Session\  Homework \Homework\ \Name}{CS170--\Session\ Homework \Homework\ \Name, \texttt{\Login}}
+\pagestyle{myheadings}
+
+\newenvironment{qparts}{\begin{enumerate}[{(}a{)}]}{\end{enumerate}}
+\def\endproofmark{$\Box$}
+\newenvironment{proof}{\par{\bf Proof}:}{\endproofmark\smallskip}
+
+\textheight=9in
+\textwidth=6.5in
+\topmargin=-.75in
+\oddsidemargin=0.25in
+\evensidemargin=0.25in
+
+
+\begin{document}
+\maketitle
+
+
+\section*{DNA Shotgun Sequencing}
+\noindent
+\textbf{Main idea.}
+We use a greedy algorithm to implement shotgun sequencing. First, we use a substring sieve to remove any strings in the input that are a substring of another string in the input. Then, we sort the input strings by descending length in order to prepare for our iterations. We maintain a cumulative superstring of string's we've already merged in previous iterations. Then, at each iteration, we take the string with the highest overlap with our current superstring, and merge that string with our superstring, and remove the string from the list of remaining strings to merge. We stop when we have no more strings to merge, and return the superstring. \\
+
+
+\noindent
+\textbf{Pseudocode.} \\
+DNA(strings[] input):\\
+\indent fragments = []\\
+\indent input.sortByDescendingLength()\\
+\indent for i in input:\\
+\indent \indent if i not substring of any element in fragments:\\
+\indent \indent \indent fragments.append(i)\\
+\indent while len(fragments) $>$ 1:\\
+\indent \indent ovdict = \{\}\\
+\indent \indent for j in range(1, len(fragments):\\
+\indent \indent \indent ovdict[j] = overlap(fragments[0], fragments[j])\\
+\indent \indent maxOVindex = ovdict.getKey(maxValue)\\
+\indent \indent fragments[0] = makeShortestSuperstring(fragments[0], fragments[maxOVindex])\\
+\indent \indent fragments.remove(fragments[maxOVindex])\\
+\indent return fragments[0]\\
+
+\noindent
+\textbf{Running time.}\\
+$\Theta(n^2k)$\\
+
+
+\noindent
+\textbf{Justification of running time.}\\
+The substring sieve, the first operation we do, will be in $\Theta(n^2k)$ because worst case we'd add in one string from the original list to the new list each iteration, and this would take however many 'in' operations as there are elements already in the new list. Thus, there will be $1 + 2 + ... + n-1 = O(n^2)$ 'in' operations, which each take $\Theta(k)$ time on average. Even though the overlap function will run in $O(k^2)$ worst case, it's expected runtime is $\Theta(k)$ because we won't have many worst-case scenarios, as many strings will be close to constant runtime.So the substring sieve will be in $\Theta(n^2k)$ running time. \\ 
+\\
+Next, we examine the main loop. The main loop will iterate through the length of the list, which is n iterations. The loop inside that constructs the dictionary will loop through the items in the list and do work $O(k)$, the overlap function. Thus, this portion of the main loop paired with the inner loop will be have $1 + 2 + ... + n-1 = O(n^2)$ operations of 'overlap', which will be a total of $\Theta(n^2k)$ running time. Additionally, inside the main loop, the other operations are finding the maximum value in a dictionary, constructing a shortest common superstring, and removing an item from a list. However, the dictionary and list operations are linear or constant, and constructing the shortest common superstring of two strings is in $O(k)$ time, but that's less than $O(nk)$. Thus the total running time of this section is dominated by the main loop paired with the inner loop: $\Theta(n^2k)$. Our substring sieve also took this long, so our overall running time is $\Theta(n^2k)$. 
+
+
+\end{document}
