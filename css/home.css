@@ -176,11 +176,11 @@ hr.small {
 
 /* Projects */
 
-.projects {
+.interests {
     padding: 50px 0;
 }
 
-.project-item {
+.interest-item {
     margin-bottom: 30px;
 }
 
@@ -202,12 +202,23 @@ hr.small {
 
 .projects {
     padding: 50px 0;
+    
 }
 
 .project-item {
+    float: left;
     margin-bottom: 30px;
+    position: relative;
 }
 
+.project-label {
+    float: left;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    color: white;
+    background-color: grey;
+    opacity: 0.8;
+}
 .img-project {
     margin: 0 auto;
 }
