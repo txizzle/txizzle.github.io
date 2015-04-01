@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CalGuessr</title>
+        
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/home.css" rel="stylesheet">
+        
+        <!-- Game CSS -->
+        <link href="css/game.css" rel="stylesheet"/>
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <div class="container-fluid .fill">
+            <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+            <div class="row text-center">
+                <h1>CalGuessr</h1>
+            </div>
+            <nav id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">                 <i class="fa fa-times"></i></a>
+                    <li class="sidebar-brand">
+                        <a href="#top">Ted Xiao</a>
+                    </li>
+                    <li>
+                        <a href="index.html#top">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#interests">Interests</a>
+                    </li>
+                    <li>
+                        <a href="index.html#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row wholegame">
+                <div class="col-md-6 image">
+                    <img id="image" name="slideImg" src="gameimg/002.jpg" onClick="switchImage('slideImg')" />
+                    <p id="imgID">Test</p>
+                </div>
+                <div class="col-md-6 rightside">
+                    <div class="info">
+                        <p><strong>Instructions:</strong> Think you know UC Berkeley's campus? Click on the map to guess where the image was taken from! The more accurate your guess, the more points you get. Good luck!</p>
+                    </div>
+                    <div class="stats">
+                        <h2>Score:</h2>
+                        <h2>Average Delta:</h2>
+                        <h2>Skipped:</h2>
+                    </div>
+                    <div id="mapdiv">
+                        <div id="map-canvas"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script>
+            // Closes the sidebar menu
+            $("#menu-close").click(function(e) {
+                e.preventDefault();
+                $("#sidebar-wrapper").toggleClass("active");
+            });
+
+            // Opens the sidebar menu
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#sidebar-wrapper").toggleClass("active");
+            });
+
+            // Scrolls to the selected menu item on the page
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+        
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="js/map.js"></script>
+        <script src="js/game.js"></script>
+    </body>
+</html>
