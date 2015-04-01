@@ -49,17 +49,33 @@
             </nav>
             <div class="row wholegame">
                 <div class="col-md-6 image">
-                    <img id="image" name="slideImg" src="gameimg/002.jpg" onClick="switchImage('slideImg')" />
+                    <img id="image" name="slideImg" src="gameimg/002.JPG" onClick="switchImage('slideImg')" />
                     <p id="imgID">Test</p>
                 </div>
                 <div class="col-md-6 rightside">
                     <div class="info">
                         <p><strong>Instructions:</strong> Think you know UC Berkeley's campus? Click on the map to guess where the image was taken from! The more accurate your guess, the more points you get. Good luck!</p>
                     </div>
-                    <div class="stats">
-                        <h2>Score:</h2>
-                        <h2>Average Delta:</h2>
-                        <h2>Skipped:</h2>
+                    <div class="stats container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <h2>Score:</h2>
+                                </div>
+                                <div class="row">
+                                    <h2>Average Delta:</h2>
+                                </div>
+                                <div class="row">
+                                    <h2>Skipped:</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <h2>Your last guess was 5.03 ft off!</h2>
+                                </div>
+                                <div class="row"></div>
+                            </div>
+                        </div>
                     </div>
                     <div id="mapdiv">
                         <div id="map-canvas"></div>

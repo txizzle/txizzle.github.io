@@ -6,17 +6,17 @@ var imageDir = 'gameimg/';
 //Each image needs to have a row in locations table w/ corresponding GPS data
 //TODO: detect how many images in imageDir photo and filter how many images for lat/long data in table
 
-var totalImages = 8;
+var totalImages = 9;
 imageArray = [];
 for (i = 1; i < totalImages; i++) {
     if (i < 10) {
-        imageArray[imageNum++] = new imageItem(imageDir + "00" + i.toString() + ".jpg");
+        imageArray[imageNum++] = new imageItem(imageDir + "00" + i.toString() + ".JPG");
     }
     else if (i < 100) {
-        imageArray[imageNum++] = new imageItem(imageDir + "0" + i.toString() + ".jpg");
+        imageArray[imageNum++] = new imageItem(imageDir + "0" + i.toString() + ".JPG");
     }
     else {
-        imageArray[imageNum++] = new imageItem(imageDir + i.toString() + ".jpg");
+        imageArray[imageNum++] = new imageItem(imageDir + i.toString() + ".JPG");
     }
 }
 
@@ -47,22 +47,3 @@ function switchImage(place) {
     var new_image = getNextImage();
     document[place].src = new_image;
 }
-
-//Get coordinates from map
-$(document).ready( function() {
-    $("#test").click(function(e) {
-        var offset = $(this).offset();
-        var relativeX = (e.pageX - offset.left);
-        var relativeY = (e.pageY - offset.top);
-        alert(relativeX+':'+relativeY);
-        $(".position").val("afaf");
-        $("#imgID").css("color", "red");
-        alert("hi");
-    });
-    
-    $("#image").on("mouseover", function() {
-        $("#imgID").css("color", "blue");
-        
-    });
-                     
-});
