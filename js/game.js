@@ -6,7 +6,7 @@ var imageDir = 'gameimg/';
 //Each image needs to have a row in locations table w/ corresponding GPS data
 //TODO: detect how many images in imageDir photo and filter how many images for lat/long data in table
 
-var totalImages = 9;
+var totalImages = 17;
 imageArray = [];
 for (i = 1; i < totalImages; i++) {
     if (i < 10) {
