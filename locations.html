@@ -39,44 +39,63 @@
       </style>
 
     <script type="text/javascript">
-      format = d3.time.format("%d-%m-%Y (%H:%M h)");
+        function draw(data) {
+            "use strict";
+            var margin = 75,
+                width = 1400 - margin,
+                height = 600 - margin;
 
-      function draw(data) {
-          "use strict";
-          var margin = 75,
-              width = 1400 - margin,
-              height = 600 - margin;
-
-          var radius = 3,
-              multiplier = 2;
-          
-          var lat_extent = d3.extent(data, function(d) {
-              return d['lat'];
-          });
-
-          var lat_scale = d3.scale.linear()
-              .range([height, margin])
-              .domain(lat_extent);
-          
-          var long_extent = d3.extent(data, function(d) {
-              return d['long'];
-          });
-
-          var long_scale = d3.scale.linear()
-              .range([height, margin])
-              .domain(long_extent);
-          
-          d3.select("body")
+            var radius = 3,
+                multiplier = 2;
+            
+            d3.select("body")
               .append("h2")
               .text("Locations of Pictures");
 
-          var svg = d3.select("body")
-              .append("svg")
-              .attr("width", width + margin)
-              .attr("height", height + margin)
-              .append('g')
-              .attr('class', 'chart');
+            var lat_extent = d3.extent(data, function(d) {
+                return d['lat'];
+            });
+
+            var lat_scale = d3.scale.linear()
+                .range([height, margin])
+                .domain(lat_extent);
+          
+            var long_extent = d3.extent(data, function(d) {
+                return d['long'];
+            });
+
+            var long_scale = d3.scale.linear()
+                .range([height, margin])
+                .domain(long_extent);
+          
+          
+            var lat_axis = d3.svg.axis()
+                .scale(lat_scale)
+                .orient("bottom");
+          
+            var svg = d3.select("body")
+                .append("svg")
+                .attr("width", width + margin)
+                .attr("height", height + margin)
+                .append('g')
+                .attr('class', 'chart');
             var svg = d3.select('svg');
+
+            svg.append('g')
+                .attr('class', 'x axis')
+                .attr('transform', "translate(0," + height + ")")
+                .call(lat_axis);
+
+            var long_axis = d3.svg.axis()
+                .scale(long_scale)
+                .orient("left");
+
+            svg.append('g')
+                .attr('class', 'y axis')
+                .attr('transform', "translate(" + margin + ",0)")
+                .call(long_axis);
+          
+            
             debugger;
               //Select circle elements (which don't exist yet)
         

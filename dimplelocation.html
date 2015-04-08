@@ -29,8 +29,13 @@
       */
         
           var myChart = new dimple.chart(svg, data);
-          var x = myChart.addMeasureAxis("x", "lat"); 
-          myChart.addMeasureAxis("y", "long");
+          var x = myChart.addMeasureAxis("x", "lat");
+          x.overrideMin = 37.86;
+          x.overrideMax = 37.88;
+          var y = myChart.addMeasureAxis("y", "long");
+          y.overrideMin = -122.27;
+          y.overrideMax = -122.25;
+          
           myChart.addSeries(null, dimple.plot.plot);
           myChart.draw();
         };
