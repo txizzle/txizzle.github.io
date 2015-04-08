@@ -15,9 +15,3 @@ html, body, #map {
   padding-right: 100px;
   font: 10px sans-serif;
 }
-
-.locations circle {
-  fill: brown;
-  stroke: black;
-  stroke-width: 1.5px;
-}
