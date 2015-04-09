@@ -46,4 +46,21 @@ function getNextImage() {
 function switchImage(place) {
     var new_image = getNextImage();
     document[place].src = new_image;
+    d3.select("#test").text(new_image);
+    d3.csv("locations.csv", function(data) {
+        var loc = d3.select(".datas")
+            .selectAll("p")
+            .data(data)
+            .enter()
+            .append("p")
+            .text(function(d) {
+                return d['c'];
+            });
+    });     
 }
+//
+// d3.csv("locations.csv", function(d) {
+//        d['lat'] = +d["lat"];
+//        d['long'] = +d['long'];
+//        return d;
+//    }, draw);
