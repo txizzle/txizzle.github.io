@@ -7,14 +7,17 @@ body {
     height: 60px;
 }
 
+#cal {
+    color: #ffb819;
+}
+
+#guessr {
+    color: #041e41;
+}
 h1 {
     font-weight: bold;
     font-size: 400%;
     margin-top: 0px;
-}
-
-.info p {
-    color: white;
 }
 
 img {
@@ -32,6 +35,12 @@ img {
     width: auto;
     background-color: slategrey;
     margin: 5px;
+}
+
+.info p {
+    color: white;
+    margin: 5px;
+    padding: 5px;
 }
 
 .stats {
