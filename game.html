@@ -49,9 +49,10 @@
             </nav>
             <div class="row wholegame">
                 <div class="col-md-6 image">
-                    <img id="image" name="slideImg" src="gameimg/002.JPG" onClick="switchImage('slideImg')" />
+                    <img id="image" name="slideImg" src="gameimg/000.JPG" onClick="switchImage('slideImg')" />
                     <p id="test">Test</p>
-                    <div class="datas">data</div>
+                    <p id="answers"></p>
+                    <div class="datas"></div>
                 </div>
                 <div class="col-md-6 rightside">
                     <div class="info">
@@ -61,18 +62,18 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="row">
-                                    <h2>Score:</h2>
+                                    <h2 id="score">Score: ---</h2>
                                 </div>
                                 <div class="row">
-                                    <h2>Average Delta:</h2>
+                                    <h2 id="avgscore">Average Score: ---</h2>
                                 </div>
                                 <div class="row">
-                                    <h2>Skipped:</h2>
+                                    <h2>Skipped: TODO</h2>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <h2>Your last guess was 5.03 ft off!</h2>
+                                    <h2 id="lastguess"></h2>
                                 </div>
                                 <div class="row"></div>
                             </div>
@@ -80,6 +81,9 @@
                     </div>
                     <div id="mapdiv">
                         <div id="map-canvas"></div>
+                    </div>
+                    <div id="cheats">
+                        <p>Tired of losing? Navigate to <a href="hacks.html">hacks</a> to see locations of all images I've taken so far!</p>
                     </div>
                 </div>
             </div>
