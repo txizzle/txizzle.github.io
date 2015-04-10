@@ -6,6 +6,16 @@ var answerLong = 0.0;
 var score = 0;
 var total = 0;
 
+
+//adding all locations.csv data onto invisible <p> 
+d3.csv("locations.csv", function(data) {
+    var loc = d3.select(".datas")
+        .selectAll("p")
+        .data(data)
+        .enter()
+        .append("p");
+});
+
 //Hardcoding how many images we have added to imageDir
 //Each image needs to have a row in locations table w/ corresponding GPS data
 //TODO: detect how many images in imageDir photo and filter how many images for lat/long data in table
@@ -54,27 +64,13 @@ function switchImage(place) {
     //testing to output new_image into text form
     d3.select("#test").text(new_image);
     
-    //adding all locations.csv data onto invisible <p> 
-    d3.csv("locations.csv", function(data) {
-        var loc = d3.select(".datas")
-            .selectAll("p")
-            .data(data)
-            .enter()
-//            .datum(function(data) {
-//                return {name: data['c'], lat: data['lat'], long: data['long'], color: data['color']};
-//            })
-            .append("p");
-//            .text(function(d) {
-//                return d['c'];
-//            });
-    });
     //Find the current file in ###.JPG form. Save to var currImage
     var captureImageRE = /\d\d\d\.JPG/;
     var currImage = captureImageRE.exec(new_image);
     var answer = d3.selectAll(".datas p")
         .each( function(d) {
             //debugger;
-            if (d['c'] == currImage) {
+            if (d['c'] == currImage[0]) {
                 //alert("found currImage lat and long!");
                 answerLat = d['lat'];
                 answerLong = d['long'];
@@ -89,7 +85,7 @@ function receiveGuess(inputLat, inputLong) {
     //we calculate the distance between guess and actual with the formula
     //degrees to feet: ft = deg*(10,000km/90deg*3280.4ft/km)
     // distance = (answerLat-guessLat)^0.5 + (answerLong-guessLong)^0.5
-    debugger;
+    //debugger;
     total += 1;
     var delta = Math.pow((answerLat-inputLat)* 10000 * 3280.4 / 90, 2) + Math.pow((answerLong-inputLong)* 10000 * 3280.4 / 90, 2);
     delta = Math.pow(delta, 0.5);
