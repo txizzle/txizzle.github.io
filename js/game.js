@@ -89,11 +89,21 @@ function receiveGuess(inputLat, inputLong) {
     total += 1;
     var delta = Math.pow((answerLat-inputLat)* 10000 * 3280.4 / 90, 2) + Math.pow((answerLong-inputLong)* 10000 * 3280.4 / 90, 2);
     delta = Math.pow(delta, 0.5);
-    score += Math.max(0, Math.round((16000000 - Math.pow(delta, 2))/4000));
+    score += getPoints(delta);
     d3.select("#score").text("Score: " + score);
     d3.select("#avgscore").text("Average Score: " + Math.round(score/total));
     d3.select("#lastguess").text("Your last guess was " + Math.round(delta) + "ft off");
     
+}
+
+function getPoints(delta) {
+    var maxPoints = 1000;
+    if (delta === 0.0) {
+        return maxPoints;
+    }
+    else {
+        return Math.max(0, Math.round((16000000 - Math.pow(delta, 2))/16000));
+    }
 }
 
 
