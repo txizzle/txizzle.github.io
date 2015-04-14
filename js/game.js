@@ -20,7 +20,7 @@ d3.csv("locations.csv", function(data) {
 //Each image needs to have a row in locations table w/ corresponding GPS data
 //TODO: detect how many images in imageDir photo and filter how many images for lat/long data in table
 
-var totalImages = 14;
+var totalImages = 18;
 imageArray = [];
 for (i = 1; i < totalImages; i++) {
     if (i < 10) {
@@ -102,7 +102,8 @@ function getPoints(delta) {
         return maxPoints;
     }
     else {
-        return Math.max(0, Math.round((16000000 - Math.pow(delta, 2))/16000));
+        //return Math.max(0, Math.round((16000000 - Math.pow(delta, 2))/16000));
+        return Math.max(0, Math.round(maxPoints - delta));
     }
 }
 
