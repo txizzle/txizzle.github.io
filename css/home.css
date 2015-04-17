@@ -165,7 +165,10 @@ hr.small {
 /* About */
 
 .about {
-    padding: 450px 0;
+    height: 100%;
+    width: 100%;
+    display: table;
+    position: relative;
     color: white;
     background: url(../img/night2-min.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
