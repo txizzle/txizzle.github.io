@@ -60,14 +60,17 @@
                             .attr("r", 10)
                             .attr("cx", padding)
                             .attr("cy", padding)
-                            .style('fill', function(d) {return d['color'];});
+                            .style('fill', function(d) {return d['color'];})
+                            .on("mouseover", function(){
+                                console.log(this);
+                                console.log(d3.select(this));
+                                d3.select(this).style("fill", "white");});
 
                         // Add a label.
                         marker.append("svg:text")
                             .attr("x", padding + 7)
                             .attr("y", padding)
                             .attr("dy", ".31em");
-                            
                             //.text(function(d) { return d['color']; });
                         
 
