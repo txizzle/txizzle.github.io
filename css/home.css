@@ -177,7 +177,7 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* Projects */
+/* Interests */
 
 .interests {
     padding: 50px 0;
@@ -202,10 +202,15 @@ hr.small {
 }
 
 /* Projects */
+#particles-js{
+  width:100%;
+  background:white;
+  position: absolute;
+}
 
 .projects {
     padding: 50px 0;
-    
+    position: relative;
 }
 
 .project-item {
