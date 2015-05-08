@@ -180,11 +180,19 @@ hr.small {
 /* Interests */
 
 .interests {
-    padding: 50px 0;
+    height: 100%;
 }
 
 .interest-item {
     margin-bottom: 30px;
+}
+
+.interest-container {
+    height: 50%;
+}
+
+.interest-panel {
+    vertical-align: middle;
 }
 
 /* Callout */
@@ -192,7 +200,7 @@ hr.small {
 .callout {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 50%;
     color: #fff;
     background: url(../img/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
