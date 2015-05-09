@@ -32,7 +32,7 @@ function launchParticlesJS(tag_id, params){
       },
       size: 2.5,
       size_random: true,
-      nb: 200,
+      nb: 100,
       line_linked: {
         enable_auto: true,
         distance: 100,

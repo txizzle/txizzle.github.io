@@ -211,14 +211,15 @@ hr.small {
 
 /* Projects */
 #particles-js{
-  width:100%;
-  background:white;
-  position: absolute;
+    width:100%;
+    height: 100%;
+    background:#4D658D;
+    position: absolute;
 }
 
 .projects {
-    padding: 50px 0;
     position: relative;
+    background:#4D658D;
 }
 
 .project-item {
