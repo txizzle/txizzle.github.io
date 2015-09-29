@@ -155,7 +155,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    background: url(../img/campus.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -188,7 +188,7 @@ hr.small {
 }
 
 .interest-container {
-    height: 50%;
+    height: 70%;
 }
 
 .interest-panel {
@@ -197,12 +197,12 @@ hr.small {
 
 /* Callout */
 
-.callout {
+.interest-container {
     display: table;
     width: 100%;
-    height: 50%;
+    height: 100%;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../img/mountain.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -217,6 +217,7 @@ hr.small {
 }
 
 .projects {
+    height: 100%;
     background:#4D658D;
     position: relative;
 }
