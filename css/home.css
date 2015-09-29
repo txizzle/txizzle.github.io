@@ -250,7 +250,7 @@ hr.small {
 
 .call-to-action {
     width: 100%;
-    background:#4D658D;
+    background:#000000;
     padding: 50px 0;
 }
 
@@ -273,7 +273,7 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
-    background:#4D658D;
+    padding: 10px 0;
+    background:black;
     color: white;
 }
