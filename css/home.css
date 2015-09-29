@@ -239,7 +239,6 @@ hr.small {
 .img-project {
     margin: 0 auto;
     width: 444px;
-    height: 333px;
 }
 
 .img-project:hover {
@@ -276,4 +275,42 @@ footer {
     padding: 10px 0;
     background:black;
     color: white;
+}
+
+.btn-linkedin {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    border-radius: 0px;
+    color: #1683bb;
+    font-size: 20px;
+    background: black;
+    padding: 10px 20px 10px 20px;
+    border: solid #1683bb 2px;
+    text-decoration: none;
+}
+
+.btn-linkedin:hover {
+    background: #1683bb;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-github {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    border-radius: 0px;
+    color: #800080 ;
+    font-size: 20px;
+    background: black;
+    padding: 10px 20px 10px 20px;
+    border: solid #800080  2px;
+    text-decoration: none;
+}
+
+.btn-github:hover {
+    background: #800080 ;
+    color: white;
+    text-decoration: none;
 }
