@@ -324,6 +324,25 @@ footer {
     text-decoration: none;
 }
 
+.btn-orange {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    border-radius: 0px;
+    color: #ff9327;
+    font-size: 20px;
+    background: black;
+    padding: 10px 20px 10px 20px;
+    border: solid #ff9327 2px;
+    text-decoration: none;
+}
+
+.btn-orange:hover {
+    background: #ff9327;
+    color: white;
+    text-decoration: none;
+}
+
 #overlay{
   position:fixed;
   z-index:99999;
