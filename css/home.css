@@ -155,7 +155,7 @@ hr.small {
     position: relative;
     width: 100%;
     min-height: 100%;
-    background: url(../img/campus.jpg) no-repeat center center scroll;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(../img/campus.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -223,7 +223,7 @@ hr.small {
     min-height: 1300px;
     background:#4D658D;
     position: relative;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../img/goldengate2.jpg) no-repeat center center scroll;
+    background: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.1) ),url(../img/goldengate2.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -251,6 +251,33 @@ hr.small {
 
 .img-project:hover {
     opacity: 0.8;
+}
+
+/* Currentlly Working on */
+.currently-working {
+	margin-bottom: 10px;
+}
+
+.blog-pic {
+	width: 25%;
+	-moz-border-radius: calc(50%);
+  -webkit-border-radius: calc(50%);
+  border-radius: calc(50%);
+	-webkit-filter: brightness(100%);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.blog-pic:hover {
+	-webkit-filter: brightness(70%);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 /* Call to Action */
@@ -339,6 +366,25 @@ footer {
 .btn-orange:hover {
     background: #ff9327;
     color: white;
+    text-decoration: none;
+}
+
+.btn-white {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    border-radius: 0px;
+    color: white;
+    font-size: 20px;
+    background: black;
+    padding: 10px 20px 10px 20px;
+    border: solid white 2px;
+    text-decoration: none;
+}
+
+.btn-white:hover {
+    background: white;
+    color: black;
     text-decoration: none;
 }
 
