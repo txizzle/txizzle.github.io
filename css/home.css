@@ -238,7 +238,7 @@ hr.small {
 
 .project-label {
     float: left;
-    width: 444px;
+    width: 480px;
     padding: 5px 0px 5px 0px;
     color: white;
     background-color: grey;
@@ -246,7 +246,7 @@ hr.small {
 }
 .img-project {
     margin: 0 auto;
-    width: 444px;
+    width: 480px;
 }
 
 .img-project:hover {
@@ -421,7 +421,7 @@ figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	width: 444px;
+	width: 480px;
 	text-align: center;
 	cursor: pointer;
 }
@@ -498,7 +498,7 @@ figure.effect-ruby img {
 }
 
 figure.effect-ruby:hover img {
-	opacity: 0.3;
+	opacity: 0.2;
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
