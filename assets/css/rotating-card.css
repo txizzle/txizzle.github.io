@@ -320,3 +320,19 @@
         visibility: visible;
     }
 }
+
+/* To fix behavior on large screens */
+@media screen and (min-width: 1620px) and (max-width: 1880px) {
+	.card .front .content {
+		margin: 0px auto 0;
+	}
+	
+	.card .cover {
+		height: 250px;
+	}
+	
+	.card-container, .front, .back {
+		height: 470px;
+	}
+	
+}
