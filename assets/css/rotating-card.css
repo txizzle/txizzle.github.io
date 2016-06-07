@@ -336,3 +336,18 @@
 	}
 	
 }
+
+@media screen and (min-width: 1880px) {
+	.card .front .content {
+		margin: 0px auto 0;
+	}
+	
+	.card .cover {
+		height: 275px;
+	}
+	
+	.card-container, .front, .back {
+		height: 500px;
+	}
+	
+}
