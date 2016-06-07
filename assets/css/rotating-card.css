@@ -92,7 +92,6 @@
 }
 .card .cover{
     height: 105px;
-    overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
 .card .cover img{
@@ -116,6 +115,10 @@
     box-shadow: none;
     padding: 10px 20px 20px;
 }
+
+.card .front .content {
+	margin: 95px auto 0;
+}
 .card .content .card-main {
 		line-height: 14px;
     min-height:130px;
@@ -131,7 +134,6 @@
     line-height: 28px;
     margin: 10px 0 0;
     text-align: center;
-    text-transform: capitalize;
 }
 .card h5{
     margin: 5px 0;
