@@ -127,7 +127,8 @@
     height: 215px;
 }
 .card .back .footer {
-	padding: 10px 0 0;
+	padding: 0 0 0;
+	margin: 0px;
 }
 .card .name {
     font-size: 22px;
@@ -162,8 +163,10 @@
     margin-top: -6px;
 }
 .card .header {
-    padding: 15px 20px;
-    height: 90px;
+    padding: 15px 20px 10px 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #EEEEEE;
+    height: 125px;
 }
 .card .motto{
     border-bottom: 1px solid #EEEEEE;
@@ -327,6 +330,9 @@
 		margin: 0px auto 0;
 	}
 	
+	.card .back .content {
+		height: 295px;
+	}
 	.card .cover {
 		height: 250px;
 	}
@@ -342,6 +348,9 @@
 		margin: 0px auto 0;
 	}
 	
+	.card .back .content {
+		height: 320px;
+	}
 	.card .cover {
 		height: 275px;
 	}
