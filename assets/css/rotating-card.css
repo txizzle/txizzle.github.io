@@ -190,9 +190,11 @@
 
 .card .stats:first-child{
 	border-right: 1px solid #EEEEEE;
+	height: 60px;
 }
 .card .stats:last-child{
 	border-left: 1px solid #EEEEEE;
+	height: 60px;
 }
 .card .stats h4{
 	font-weight: 300;
