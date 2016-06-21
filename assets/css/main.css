@@ -2557,14 +2557,25 @@
 	height: 100%;
 }
 
-#about-me {
-	height: 100vh;
-}
-
 .contact {
 	margin-bottom: 2em;
 }
 
+.about-img {
+		width: 248px;
+		height: 155px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 
-/* Filtering */
-/* TODO */
+@media screen and (max-width: 100px) {
+	#about-me {
+		min-height: 100vh;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#about-me {
+		height: 100vh;
+	}
+}
