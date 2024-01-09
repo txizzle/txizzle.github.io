@@ -1,139 +1,789 @@
 <!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Ted Xiao</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/splash_main.css" />
-		<link rel="stylesheet" href="assets/css/about_main.min.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+  <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KDC3Z8917"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-9KDC3Z8917');
     </script>
-	<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="splash-wrapper">
+    <!-- Title -->
+    <title>Ted Xiao - Google DeepMind</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
 
-				<!-- Main -->
-					<section id="splash-main">
-						<header>
-							<span class="avatar"><img src="images/profile.jpeg" alt="" /></span>
-							<h1>Ted Xiao</h1>
-							<p>Robotics @ Google DeepMind</p>
-						</header>
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-						<footer>
-							<ul class="splash-ul icons">
-								<li><a href="https://scholar.google.com/citations?user=LIJQ_ZYAAAAJ&hl=en" class="fa-google">Google Scholar</a></li>
-								<li><a href="https://twitter.com/xiao_ted" class="fa-twitter">Twitter</a></li>
-<!--								<li><a href="https://github.com/txizzle" class="fa-github">Github</a></li>-->
-								<li><a href="https://www.linkedin.com/in/tedxiao" class="fa-linkedin">Linkedin</a></li>
-                                
-								<li><a href="https://agentic.substack.com/" class="fa-pencil">Blog</a></li>
-							</ul>
-						</footer>
-					</section>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
 
-				<!-- Footer -->
-					<footer id="footer">
-						
-							<ul class="splash-ul icons">
-								<li><a href="#about-wrapper" id="scroll-down" class="fa-chevron-down scrolly">See More</a></li>
-							</ul>
-					</footer>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+  </head>
 
-			</div>
-		
-			<section id="about-wrapper">
-					<!-- Header -->
-					<div id="header">
-						<div class="top">
-							<!-- Logo -->
-							<div id="logo">
-								<span class="image avatar48"><img src="images/profile.jpeg" alt="" /></span>
-								<h1 id="title">Ted Xiao</h1>
-								<p>Senior Research Scientist at Google DeepMind</p>
-							</div>
-							<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a href="#top" id="top-link" class="skel-layers-ignoreHref active"><span class="icon fa-home">Intro</span></a></li>
-									<li><a href="portfolio.html" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-									<li><a href="about.html" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-									<li><a href="https://agentic.substack.com/" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-pencil">Blog</span></a></li>
-<!--									<li><a href="contact.html" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>-->
-								</ul>
-							</nav>
-						</div>
-						<div class="bottom">
-							<!-- Social Icons -->
-							<ul class="icons">
-								<li><a href="https://twitter.com/xiao_ted" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/tedxiao" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/txizzle" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:ted@tedxiao.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- Main -->
-					<div id="main">
-						<!-- Intro -->
-						<section id="top" class="one dark cover">
-							<div class="about container">
-									<h1 class="alt">Hi, I'm <strong>Ted</strong>.</h1>
-									<p>I'm a Senior Research Scientist at <strong>Google DeepMind</strong>, <br /> where I work on scaling robot learning. </p>
-                                <!--  pursuing an M.S. in <strong>Electrical Engineering and <br /> Computer Science</strong> at UC Berkeley -->
-								<h2 class="alt">I'm passionate about <br /> <span class="site-color"> internet-scale models</span>, <span class="site-color">deep reinforcement learning</span>, and <span class="site-color"> robotics.</span></h2>
-								<footer>
-								</footer>
-							</div>
-						</section>
-				</div>
-			</section>
-			
-		<div id="overlay">
-        <div id="progstat"></div>
-        <div id="progress"></div>
+  <body id="body">
+
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <h1>Ted Xiao</h1>
+          <p>
+            I'm a research scientist at <a href="https://research.google/teams/robotics/">Google DeepMind</a>, where I work on making robots smarter. My research focuses on robot learning, internet-scale foundation models, and reinforcement learning. I am particularly interested in methods that can scale and generalize in the real world. 
+            <div id="more-bio" style="display: None">
+              <br>
+              <p>Ted Xiao is a Senior Research Scientist at <a href="https://research.google/teams/robotics/">Google DeepMind</a> working on robot learning. He received his B.S. and M.S. in Electrical Engineering and Computer Science from <a href="https://www.berkeley.edu/">UC Berkeley</a>, where he was advised by Professor Claire Tomlin. His research agenda focuses on scaling robot learning in the real world, with a particular focus on approaches that can leverage internet-scale foundation models and methods that improve with more experience. Before joining Google DeepMind, Ted founded <a href="https://ml.berkeley.edu/">Machine Learning at Berkeley</a> and has worked at Adobe Research and Amazon. </p>
+            </div>
+            <br>
+            <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?user=LIJQ_ZYAAAAJ&hl=en">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://twitter.com/xiao_ted">Twitter</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://agentic.substack.com/">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/tedxiao/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/txizzle">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br><br>
+            tedxiao at google dot com
+            <br><br>
+          </p>
+        </div>
+        <div id="intro-image">
+          <img src="images/profile.jpeg">
+        </div>
+      </div>
+
+      <div id="filters" class="button-group">
+        <!-- <button class="button" data-filter="*">Show All</button> -->
+        <button class="button is-checked" data-filter=".highlight">Highlights</button>
+        <button class="button" data-filter=".publication">Research</button>
+        <button class="button" data-filter=".talk">Talks</button>
+        <button class="button" data-filter=".writing">Writing</button>
+        <button class="button" data-filter=".misc">Misc</button>
+      </div>
+
+      <div class="grid">
+
+        <!-- Highlights -->
+        <div class="list-item highlight description" data-category="highlight">
+          Some recent highlights from our research:
+        </div>
+
+        <!-- Preview Videos -->
+        <div class="list-item highlight previews" data-category="highlight">
+
+          <a href="https://robotics-transformer2.github.io/">
+            <p>RT-2</p>
+            <br>
+            <video class="preview1" playsinline="" muted="" autoplay="" loop="">
+              <source src="images/video-rt2.mp4" type="video/mp4">
+            </video>
+          </a>
+
+          <a href="https://robotics-transformer.github.io/">
+            <p>RT-1 and SayCan</p>
+            <br>
+            <video class="preview2" playsinline="" muted="" autoplay="" loop="">
+              <source src="images/video-saycan-rt1.mp4" type="video/mp4">
+            </video>
+          </a>
+          <!-- </a> -->
+
+        <a href="https://tossingbot.cs.princeton.edu/">
+          <p>Inner Monologue</p>
+          <br>
+          <video class="preview3" playsinline="" muted="" autoplay="" loop="">
+            <source src="images/video-inner-monologue.mp4" type="video/mp4">
+          </video>
+        </a>
+          
+
+        </div>
+
+        <!-- Truncated Set of Highlights (Shown by Default) -->
+        <div id="main-highlights">
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>Google DeepMind</b> blog post <a href="https://deepmind.google/discover/blog/shaping-the-future-of-advanced-robotics/">"Shaping the Future of Advanced Robotics"</a>
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>TechCrunch</b> article <a href="https://techcrunch.com/2024/01/04/google-outlines-new-methods-for-training-robots-with-video-and-large-language-models/">"Google Outlines New Methods for Training Robots with Video and Large Language Models"</a>
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>New York Times</b> article <a href="https://www.nytimes.com/2023/07/28/technology/google-robots-ai.html">"With the Aid of A.I., Google's Robots Get Smart"</a>
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>Google DeepMind</b> blog post <a href="https://deepmind.google/discover/blog/scaling-up-learning-across-many-different-robot-types/">Scaling Up Learning Across Many Different Robot Types</a>
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>CNET</b> video <a href="https://www.youtube.com/watch?v=dCPHGwW9SOk">"Google’s Most Advanced Robot Brain Just Got a Body"</a>
+          </div>
+          
+          <div class="list-item highlight" data-category="highlight">
+            <b>CoRL</b> <a href="https://corl2022.org/awards/">Special Innovation Award</a>
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>Google AI</b> blog post <a href="https://blog.research.google/2022/04/efficiently-initializing-reinforcement.html">"Efficiently Initializing Reinforcement Learning With Prior Policies"</a>
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>60 Minutes</b> video <a href="https://www.cbsnews.com/news/google-artificial-intelligence-future-60-minutes-transcript-2023-04-16/">"Is Artificial Intelligence Advancing Too Quickly?"</a>
+          </div>
+        </div>
+
+        <!-- Publications -->
+        <div class="list-item publication" data-category="publication">
+          <a href="https://rt-sketch.github.io/" class="thumbnail">
+            <img src="images/rtsketch_gif.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://rt-sketch.github.io/">RT-Sketch: Goal-Conditioned Imitation Learning from Hand-Drawn Sketches</a></h3>
+            <p>
+              Priya Sundaresan, Quan Vuong, Jiayuan Gu, Peng Xu, Ted Xiao, Sean Kirmani, Tianhe Yu, Michael Stark, Ajinkya Jain, Karol Hausman, Dorsa Sadigh*, Jeannette Bohg*, Stefan Schaal*<br>
+                <i>Preprint</i><br>
+                <a href="https://rt-sketch.github.io/">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://rt-sketch.github.io/assets/rt_sketch.pdf">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://iliad.stanford.edu/pg-vlm/" class="thumbnail">
+            <img src="images/pgv_gif.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://iliad.stanford.edu/pg-vlm/">Physically Grounded Vision-Language Models for Robotic Manipulation</a></h3>
+            <p>
+              Jensen Gao, Bidipta Sarkar, Fei Xia, Ted Xiao, Jiajun Wu, Brian Ichter, Anirudha Majumdar, Dorsa Sadigh<br>
+                <i>Preprint</i><br>
+                <a href="https://iliad.stanford.edu/pg-vlm/">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2309.02561.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://drive.google.com/file/d/17gbzrJSs8YjVafIrX4omR_rx6qLgXjUd/view">Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://drive.google.com/file/d/1ThZ7p_5BnMboK_QE13m1fPKa4WGdRcfC/view">Dataset</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://huggingface.co/bidiptas/PG-InstructBLIP">Model</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://openreview.net/forum?id=1aRNtmy5zX" class="thumbnail">
+            <img src="images/promptbook_thumb.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://openreview.net/forum?id=1aRNtmy5zX">
+              How to Prompt Your Robot: A PromptBook for Manipulation Skills with Code as Policies</a></h3>
+            <p>
+              Montserrat Gonzalez Arenas, Ted Xiao, Sumeet Singh, Vidhi Jain, Allen Z Ren, Quan Vuong, Jake Varley, Alexander Herzog, Isabel Leal, Sean Kirmani, Dorsa Sadigh, Vikas Sindhwani, Kanishka Rao, Jacky Liang, Andy Zeng<br>
+                <i><font color="49bf9">&#9733; Oral Presentation &#9733;</font> Robot Learning Workshop (WRL) at the Conference on Neural Information Processing Systems (NeurIPS) 2023</i><br>
+                <a href="https://openreview.net/pdf?id=1aRNtmy5zX">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://rt-trajectory.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-rttrajectory.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://rt-trajectory.github.io/">RT-Trajectory: Robotic Task Generalization via Hindsight Trajectory Sketches</a></h3>
+            <p>
+              Jiayuan Gu, Sean Kirmani, Paul Wohlhart, Yao Lu, Montserrat Gonzalez Arenas, Kanishka Rao, Wenhao Yu, Chuyuan Fu, Keerthana Gopalakrishnan, Zhuo Xu, Priya Sundaresan, Peng Xu, Hao Su, Karol Hausman, Chelsea Finn, Quan Vuong, Ted Xiao<br>
+                <i>Robot Learning Workshop (WRL) at the Conference on Neural Information Processing Systems (NeurIPS) 2023</i><br>
+                <a href="https://rt-trajectory.github.io/">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2311.01977.pdf">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://robotics-transformer-x.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-rtx.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://robotics-transformer-x.github.io/">Open X-Embodiment: Robotic Learning Datasets and RT-X Models</a></h3>
+            <p>
+              Open X-Embodiment Collaboration [>150 Authors]<br>
+                <i>Robot Learning Workshop (WRL) at the Conference on Neural Information Processing Systems (NeurIPS) 2023</i><br>
+                <a href="https://robotics-transformer-x.github.io/">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2310.08864.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/google-deepmind/open_x_embodiment">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g/edit#gid=0">Dataset</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://deepmind.google/discover/blog/scaling-up-learning-across-many-different-robot-types/">Blogpost</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://sites.google.com/view/generalization-gap/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-gengap.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://sites.google.com/view/generalization-gap/">Decomposing the Generalization Gap in Imitation Learning
+              for Visual Robotic Manipulation</a></h3>
+            <p>
+              Annie Xie, Lisa Lee, Ted Xiao, Chelsea Finn<br>
+                <i>Robot Learning Workshop (WRL) at the Conference on Neural Information Processing Systems (NeurIPS) 2023</i><br>
+                <a href="https://sites.google.com/view/generalization-gap/">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2307.03659.pdf">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://robot-moo.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-moo.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://robot-moo.github.io/">Open-World Object Manipulation using Pre-Trained Vision-Language Models</a></h3>
+            <p>
+              Austin Stone*, Ted Xiao*, Yao Lu*, Keerthana Gopalakrishnan, Kuang-Huei Lee, Quan Vuong, Paul Wohlhart, Sean Kirmani, Brianna Zitkovich, Fei Xia, Chelsea Finn, Karol Hausman<br>
+                <i>Conference on Robot Learning (CoRL) 2023</i><br>
+                <a href="https://robot-moo.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2303.00905.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=KyvHTbLRovI&feature=youtu.be">Video</a>
+                <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://robotics-transformer2.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-rt2.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://robotics-transformer2.github.io/">RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control</a></h3>
+            <p>
+              Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Xi Chen, Krzysztof Choromanski, Tianli Ding, Danny Driess, Avinava Dubey, Chelsea Finn, Pete Florence, Chuyuan Fu, Montse Gonzalez Arenas, Keerthana Gopalakrishnan, Kehang Han, Karol Hausman, Alex Herzog, Jasmine Hsu, Brian Ichter, Alex Irpan, Nikhil Joshi Ryan Julian, Dmitry Kalashnikov, Yuheng Kuang, Isabel Leal, Lisa Lee, Tsang-Wei Edward Lee, Sergey Levine, Yao Lu, Henryk Michalewski, Igor Mordatch, Karl Pertsch, Kanishka Rao, Krista Reymann, Michael Ryoo, Grecia Salazar, Pannag Sanketi, Pierre Sermanet, Jaspiar Singh, Anikait Singh, Radu Soricut, Huong Tran, Vincent Vanhoucke, Quan Vuong, Ayzaan Wahid, Stefan Welker, Paul Wohlhart, Jialin Wu, Fei Xia, Ted Xiao, Peng Xu, Sichun Xu, Tianhe Yu, Brianna Zitkovich<br>
+                <i>Conference on Robot Learning (CoRL) 2023</i><br>
+                <a href="https://robotics-transformer2.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2307.15818.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://robotics-transformer2.github.io/#videos">Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://deepmind.google/discover/blog/rt-2-new-model-translates-vision-and-language-into-action/">Blogpost</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://language-to-reward.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-l2r.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://language-to-reward.github.io/">Language to Rewards for Robotic Skill Synthesis</a></h3>
+            <p>
+              Wenhao Yu, Nimrod Gileadi, Chuyuan Fu, Sean Kirmani, Kuang-Huei Lee, Montse Gonzalez Arenas, Hao-Tien, Lewis Chiang, Tom Erez, Leonard Hasenclever, Jan Humplik, Brian Ichter, Ted Xiao, Peng Xu, Andy Zeng, Tingnan Zhang, Nicolas Heess, Dorsa Sadigh, Jie Tan, Yuval Tassa, Fei Xia<br>
+              <i><font color="49bf9">&#9733; Oral Presentation &#9733;</font>, Conference on Robot Learning (CoRL) 2023</i><br>
+                <a href="https://language-to-reward.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2306.08647.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/google-deepmind/language_to_reward_2023">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://blog.research.google/2023/08/language-to-rewards-for-robotic-skill.html">Blogpost</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://instructionaugmentation.github.io/" class="thumbnail">
+            <img src="images/dial_thumb.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://instructionaugmentation.github.io/">Robotic Skill Acquisition via Instruction Augmentation with Vision-Language Models</a></h3>
+            <p>
+              Ted Xiao*, Harris Chan*, Pierre Sermanet, Ayzaan Wahid, Anthony Brohan, Karol Hausman, Sergey Levine, Jonathan Tompson<br>
+                <i>Robotics: Science and Systems (RSS) 2023</i><br>
+                <a href="https://instructionaugmentation.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2211.11736.pdf">PDF</a>
+                <!-- <a href="https://github.com/video-language-planning/vlp_code">Code</a> -->
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://diffusion-rosie.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-rosie.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://diffusion-rosie.github.io/">Scaling Robot Learning with Semantically Imagined Experience</a></h3>
+            <p>
+              Tianhe Yu, Ted Xiao, Austin Stone, Jonathan Tompson, Anthony Brohan, Su Wang, Jaspiar Singh, Clayton Tan, Dee M, Jodilyn Peralta, Brian Ichter, Karol Hausman, Fei Xia<br>
+              <i>Robotics: Science and Systems (RSS) 2023</i><br>
+                <a href="https://diffusion-rosie.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/abs/2302.11550">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=TRYgNHDS7II&feature=youtu.be">Video</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://rl-at-scale.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-rlatscale.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://rl-at-scale.github.io/">Deep RL at Scale: Sorting Waste in Office Buildings with a Fleet of Mobile Manipulators</a></h3>
+            <p>
+              Alexander Herzog*, Kanishka Rao* Karol Hausman*, Yao Lu*, Paul Wohlhart*, Mengyuan Yan, Jessica Lin, Montserrat Gonzalez Arenas, Ted Xiao, Daniel Kappler, Daniel Ho, Jarek Rettinghouse, Yevgen Chebotar, Kuang-Huei Lee, Keerthana Gopalakrishnan, Ryan Julian, Adrian Li, Chuyuan Kelly Fu, Bob Wei, Sangeetha Ramesh, Khem Holden, Kim Kleiven, David Rendleman, Sean Kirmani, Jeff Bingham, Jon Weisz, Ying Xu, Wenlong Lu, Matthew Bennice, Cody Fong, David Do, Jessica Lam, Yunfei Bai, Benjie Holson, Michael Quinlan, Noah Brown, Mrinal Kalakrishnan, Julian Ibarz, Peter Pastor, Sergey Levine<br>
+              <i>Robotics: Science and Systems (RSS) 2023</i><br>
+                <a href="https://rl-at-scale.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2305.03270.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=CHS9HSb1uqA">Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://blog.research.google/2023/04/robotic-deep-rl-at-scale-sorting-waste.html">Blogpost</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://robotics-transformer1.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/rt1_thumb.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://robotics-transformer1.github.io/">RT-1: Robotics Transformer for Real-World Control at Scale</a></h3>
+            <p>
+              Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Joseph Dabis, Chelsea Finn, Keerthana Gopalakrishnan, Karol Hausman, Alex Herzog, Jasmine Hsu, Julian Ibarz, Brian Ichter, Alex Irpan, Tomas Jackson, Sally Jesmonth, Nikhil J Joshi, Ryan Julian, Dmitry Kalashnikov, Yuheng Kuang, Isabel Leal, Kuang-Huei Lee, Sergey Levine, Yao Lu, Utsav Malla, Deeksha Manjunath, Igor Mordatch, Ofir Nachum, Carolina Parada, Jodilyn Peralta, Emily Perez, Karl Pertsch, Jornell Quiambao, Kanishka Rao, Michael Ryoo, Grecia Salazar, Pannag Sanketi, Kevin Sayed, Jaspiar Singh, Sumedh Sontakke, Austin Stone, Clayton Tan, Huong Tran, Vincent Vanhoucke, Steve Vega, Quan Vuong, Fei Xia, Ted Xiao, Peng Xu, Sichun Xu, Tianhe Yu, Brianna Zitkovich<br>
+              <i>Robotics: Science and Systems (RSS) 2023</i><br>
+                <a href="https://robotics-transformer1.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2212.06817.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=UuKAp9a6wMs">Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/google-research/robotics_transformer">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://blog.research.google/2022/12/rt-1-robotics-transformer-for-real.html">Blogpost</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://arxiv.org/abs/2211.09119" class="thumbnail">
+            <img src="images/ttm_thumb.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/abs/2211.09119">Token Turing Machines</a></h3>
+            <p>
+              Michael S. Ryoo, Keerthana Gopalakrishnan, Kumara Kahatapitiya, Ted Xiao, Kanishka Rao, Austin Stone, Yao Lu, Julian Ibarz, Anurag Arnab<br>
+                <i>Conference on Computer Vision and Pattern Recognition (CVPR) 2023</i><br>
+                <a href="https://arxiv.org/abs/2211.09119">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/google-research/scenic/tree/main/scenic/projects/token_turing">Code</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://jumpstart-rl.github.io/" class="thumbnail">
+            <img src="images/jsrl_gif.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://jumpstart-rl.github.io/">Jump-Start Reinforcement Learning</a></h3>
+            <p>
+              Ikechukwu Uchendu, Ted Xiao, Yao Lu, Banghua Zhu, Mengyuan Yan, Joséphine Simon, Matthew Bennice, Chuyuan Fu, Cong Ma, Jiantao Jiao, Sergey Levine, Karol Hausman<br>
+                <i>International Conference on Machine Learning (ICML) 2023</i><br>
+                <a href="https://jumpstart-rl.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2204.02372.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://blog.research.google/2022/04/efficiently-initializing-reinforcement.html">Blogpost</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://innermonologue.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-inner-monologue.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://innermonologue.github.io/">Inner Monologue: Embodied Reasoning through Planning with Language Models</a></h3>
+            <p>
+              Wenlong Huang*, Fei Xia*, Ted Xiao*, Harris Chan, Jacky Liang, Pete Florence, Andy Zeng, Jonathan Tompson, Igor Mordatch, Yevgen Chebotar, Pierre Sermanet, Noah Brown, Tomas Jackson, Linda Luu, Sergey Levine, Karol Hausman, Brian Ichter<br>
+                <i>Conference on Robot Learning (CoRL) 2023</i><br>
+                <a href="https://innermonologue.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2207.05608.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=0sJjdxn5kcI">Video</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://say-can.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/video-saycan-rt1.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://say-can.github.io/">Do As I Can, Not As I Say: Grounding Language in Robotic Affordances</a></h3>
+            <p>
+              Michael Ahn, Anthony Brohan, Noah Brown, Yevgen Chebotar, Omar Cortes, Byron David, Chelsea Finn, Chuyuan Fu, Keerthana Gopalakrishnan, Karol Hausman, Alex Herzog, Daniel Ho, Jasmine Hsu, Julian Ibarz, Brian Ichter, Alex Irpan, Eric Jang, Rosario Jauregui Ruano, Kyle Jeffrey, Sally Jesmonth, Nikhil J Joshi, Ryan Julian, Dmitry Kalashnikov, Yuheng Kuang, Kuang-Huei Lee, Sergey Levine, Yao Lu, Linda Luu, Carolina Parada, Peter Pastor, Jornell Quiambao, Kanishka Rao, Jarek Rettinghouse, Diego Reyes, Pierre Sermanet, Nicolas Sievers, Clayton Tan, Alexander Toshev, Vincent Vanhoucke, Fei Xia, Ted Xiao, Peng Xu, Sichun Xu, Mengyuan Yan, Andy Zeng<br>
+                <i><font color="49bf9">&#9733; Oral Presentation, Special Innovation Award &#9733;</font>, Conference on Robot Learning (CoRL) 2022</i><br>
+                <a href="https://say-can.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2204.01691.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=ysFav0b472w">Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://github.com/google-research/google-research/tree/master/saycan">Code</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://sites.research.google/palm-saycan">Demo</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://blog.research.google/2022/08/towards-helpful-robots-grounding.html">Blogpost</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://piqtopt.github.io/" class="thumbnail">
+            <img src="images/piqtopt_thumb.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://piqtopt.github.io/">PI-QT-Opt: Predictive Information Improves Multi-Task Robotic Reinforcement Learning at Scale</a></h3>
+            <p>
+              Kuang-Huei Lee, Ted Xiao, Adrian Li, Paul Wohlhart, Ian Fischer, Yao Lu<br>
+              <i>Conference on Robot Learning (CoRL) 2023</i><br>
+                <a href="https://piqtopt.github.io/">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2210.08217.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=ioMplI5HlZQ">Video</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://arxiv.org/pdf/2111.03189.pdf" class="thumbnail">
+            <img src="images/vfs_gif.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/pdf/2111.03189.pdf">Value Function Spaces: Skill-Centric State Abstractions for Long-Horizon Reasoning</a></h3>
+            <p>
+              Dhruv Shah, Peng Xu, Yao Lu, Ted Xiao, Alexander Toshev, Sergey Levine, Brian Ichter<br>
+                <i>International Conference on Learning Representations (ICLR) 2022</i><br>
+                <a href="https://arxiv.org/pdf/2111.03189.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://blog.research.google/2022/04/extracting-skill-centric-state.html">Blogpost</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://awopt.github.io/" class="thumbnail">
+            <img src="images/awopt_gif.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://awopt.github.io/">AW-Opt: Learning Robotic Skills with Imitation and Reinforcement at Scale</a></h3>
+            <p>
+              Yao Lu, Karol Hausman, Yevgen Chebotar, Mengyuan Yan, Eric Jang, Alexander Herzog, Ted Xiao, Alex Irpan, Mohi Khansari, Dmitry Kalashnikov, Sergey Levine<br>
+                <i>Conference on Robot Learning (CoRL) 2021</i><br>
+                <a href="https://awopt.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2111.05424.pdf">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://actionable-models.github.io" class="thumbnail">
+            <img src="images/am_gif.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://actionable-models.github.io">Actionable Models: Unsupervised Offline Reinforcement Learning of Robotic Skills</a></h3>
+            <p>
+              Yevgen Chebotar, Karol Hausman, Yao Lu, Ted Xiao, Dmitry Kalashnikov, Jake Varley, Alex Irpan, Benjamin Eysenbach, Ryan Julian, Chelsea Finn, Sergey Levine<br>
+                <i>International Conference on Machine Learning (ICML) 2021</i><br>
+                <a href="https://actionable-models.github.io">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2104.07749.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=S3SCR7iYMGA">Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://blog.research.google/2021/04/multi-task-robotic-reinforcement.html">Blogpost</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://sites.google.com/view/thinkingwhilemoving" class="thumbnail">
+            <img src="images/twm_thumb.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://sites.google.com/view/thinkingwhilemoving">Thinking While Moving: Deep Reinforcement Learning with Concurrent Control</a></h3>
+            <p>
+              Ted Xiao, Eric Jang, Dmitry Kalashnikov, Sergey Levine, Julian Ibarz, Karol Hausman*, Alexander Herzog*<br>
+                <i>International Conference on Learning Representations (ICLR) 2020</i><br>
+                <a href="https://sites.google.com/view/thinkingwhilemoving">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/2004.06089.pdf">PDF</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/watch?v=FPqgYJZgq-g">Video</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://learning-from-play.github.io/" class="thumbnail">
+            <img src="images/lfp_thumb.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://learning-from-play.github.io/">Learning Latent Plans from Play</a></h3>
+            <p>
+              Corey Lynch, Mohi Khansari, Ted Xiao, Vikash Kumar, Jonathan Tompson, Sergey Levine, Pierre Sermanet<br>
+                <i><font color="49bf9">&#9733; Oral Presentation&#9733;</font>, Conference on Robot Learning (CoRL) 2019</i><br>
+                <a href="https://learning-from-play.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/pdf/1903.01973.pdf">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://www.routledge.com/Artificial-Intelligence-Safety-and-Security/Yampolskiy/p/book/9780815369820" class="thumbnail">
+            <img src="images/book_thumb.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://www.routledge.com/Artificial-Intelligence-Safety-and-Security/Yampolskiy/p/book/9780815369820">Adversarial Machine Learning</a></h3>
+            <p>
+              Phillip Kuznetsov, Riley Edmunds, Ted Xiao, Humza Iqbal, Raul Puri, Noah Golmant, Shannon Shih<br>
+                <i>Contributed Chapter, Artificial Intelligence Safety and Security (CRC Press)</i><br>
+                <a href="https://www.routledge.com/Artificial-Intelligence-Safety-and-Security/Yampolskiy/p/book/9780815369820">Book</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://arxiv.org/pdf/1703.09260.pdf" class="thumbnail">
+            <img src="images/adobo_thumb.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/pdf/1703.09260.pdf">Goal-Driven Dynamics Learning via Bayesian Optimization</a></h3>
+            <p>
+              Somil Bansal, Roberto Calandra, Ted Xiao, Sergey Levine, Claire J. Tomlin<br>
+                <i>56th IEEE Conference on Decision and Control (CDC) 2017</i><br>
+                <a href="https://arxiv.org/pdf/1703.09260.pdf">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://tedxiao.me/pdf/literature_review.pdf" class="thumbnail">
+            <img src="images/dynamics_thumb.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://tedxiao.me/pdf/literature_review.pdf">A Literature Review of Learning and Optimization Methods Applied to Quadrotor Control</a></h3>
+            <p>
+              Ted Xiao<br>
+                <i>Technical Report</i><br>
+                <a href="https://tedxiao.me/pdf/literature_review.pdf">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://tedxiao.me/pdf/gans_drl.pdf" class="thumbnail">
+            <img src="images/gan_thumb.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://tedxiao.me/pdf/gans_drl.pdf">Generative Adversarial Networks for Model-based Reinforcement Learning with Tree Search</a></h3>
+            <p>
+              Ted Xiao*, Gautham Kesineni*<br>
+                <i>Technical Report</i><br>
+                <a href="https://tedxiao.me/pdf/gans_drl.pdf">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://tedxiao.me/pdf/CS294_Report.pdf" class="thumbnail">
+            <img src="images/upscaling_thumb.png" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://tedxiao.me/pdf/CS294_Report.pdf">Frame Rate Upscaling with Deep Neural Networks</a></h3>
+            <p>
+              Ted Xiao, Raul Puri, Gautham Kesineni<br>
+                <i>Technical Report</i><br>
+                <a href="https://tedxiao.me/pdf/CS294_Report.pdf">PDF</a>
+                <br>
+            </p>
+          </div>
+        </div>
+
+
+
+        <!-- Talks -->
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2023</p>USC <a href="https://sites.google.com/usc.edu/cs699-fa23-manipulation/home">CS699 Guest Lecture</a>
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date"></p>UT Austin <a href="https://www.cs.utexas.edu/~yukez/cs391r_fall2023/">CS391R Guest Lecture</a> (<a href="https://docs.google.com/presentation/d/1Kq3zLKI19u4NC7t21bDt7_nyc-OkPHevrv3EwWTVzCA/edit?usp=sharing&resourcekey=0-Xdy8GqL2PIhlWstJcTcEqg">slides</a>)
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date"></p>NVIDIA Invited Talk
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date"></p>Stanford <a href="https://web.stanford.edu/class/cs25/prev_years/2023_winter/index.html">CS25 Guest Lecture</a> (<a href="https://www.youtube.com/watch?v=ct4tdyyNDY4">recording</a>)
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2022</p>UPenn <a href="https://www.grasp.upenn.edu/events/month/">GRASP SFI Seminar</a> (<a href="https://www.youtube.com/watch?v=t-Gl-a2GAKk">recording</a>)
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2021</p>UC Berkeley <a href="https://ml.berkeley.edu/">Machine Learning at Berkeley</a> Tutorial
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2018</p>Xoogler Machine Learning Keynote
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2017</p>RobotX <a href="https://www.eventbrite.com/e/robotx-workshop-deep-learning-security-nlp-with-uc-berkeley-ai-lab-tickets-33294488712">NLP Tutorial</a>
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date"></p>UC Davis <a href="https://www.facebook.com/iidatascience/">iidata Conference</a> Keynote
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date"></p>DiversaTech Technical Interview Workshop
+        </div>
+
+        <!-- Writing -->
+        <div class="list-item writing" data-category="writing">
+          <p class="date">2023</p><a href="https://agentic.substack.com/p/robotics-in-the-era-of-foundation">Robotics in the Era of Foundation Models</a>
+        </div>
+
+        <div class="list-item writing" data-category="writing">
+          <p class="date"></p><a href="https://agentic.substack.com/p/ai-is-domestication">AI is Domestication</a>
+        </div>
+
+
+
+        <!-- Services -->
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2023</p>Co-Organizer, CoRL Workshop on <a href="https://sites.google.com/view/langrob-corl23/home">Language and Robot Learning</a>
+        </div>
+
+        <div class="list-item misc" data-category="misc">
+          <p class="date"></p>Demo, Robotics: Science and Systems (RSS) - <a href="https://roboticsconference.org/program/papers/024/">Large Language Models on Robots</a>
+        </div>
+
+        <div class="list-item misc" data-category="misc">
+          <p class="date"></p>Lead Organizer, ICRA Workshop on <a href="https://sites.google.com/view/ldod2023/home">Learning from Diverse, Offliine Data</a>
+        </div>
+
+        <div class="list-item misc" data-category="misc">
+          <p class="date"></p>Co-Organizer, ICLR Workshop on <a href="https://reincarnating-rl.github.io/">Reincarnating Reinforcement Learning</a>
+        </div>
+
+        <div class="list-item misc" data-category="misc">
+          <p class="date"></p>Co-Organizer, CoRL Workshop on <a href="https://sites.google.com/view/langrob-corl22/">Language and Robot Learning</a>
+        </div>
+
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2022</p>Co-Organizer, NeurIPS <a href="https://sites.google.com/view/deep-rl-workshop-neurips-2022">Deep Reinforcement Learning Workshop</a>
+        </div>
+
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2018+</p>Reviewer, CoRL, RSS, RA-L, ICRA, NeurIPS, ICML, ICLR
+        </div>
+
+      </div>
+
+      <div id="footer">Website template from <a href="https://andyzeng.github.io/">Andy Zeng</a>.</div>
+
     </div>
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/new_main.min.js"></script>
-		  <script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-				ga('create', 'UA-62786551-4', 'auto');
-				ga('send', 'pageview');
-			</script>
-	</body>
+    <script>
+
+      // Isotope grid.
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false,
+        getSortData: {
+          name: '.name',
+          symbol: '.symbol',
+          number: '.number parseInt',
+          category: '[data-category]',
+          weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+          }
+        }
+      });
+
+      // Bind filter button click.
+      $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        localStorage.setItem('filterValue', filterValue);
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // Change is-checked class on buttons.
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+
+      function update_isotope() {
+        // Retrieve cached button click.
+        var defaultFilterValue = localStorage.getItem('filterValue');
+        if (defaultFilterValue == null) {
+          defaultFilterValue = ".highlight"
+        }
+        $grid.isotope({ filter: defaultFilterValue });
+        var buttons = document.getElementsByClassName("button");
+        for (var currButton of buttons) {
+          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+            currButton.classList.add('is-checked');
+          } else {
+            currButton.classList.remove('is-checked');
+          }
+        }
+      }
+
+      function toggle_bio() {
+        var x = document.getElementById("more-bio");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function toggle_highlights() {
+        var x = document.getElementById("main-highlights");
+        var y = document.getElementById("more-highlights");
+        var b = document.getElementById("toggle_highlights_button")
+        if (y.style.display === "none") {
+          x.style.display = "none";
+          y.style.display = "block";
+          b.innerHTML = "Show less"
+          update_isotope();
+        } else {
+          x.style.display = "block";
+          y.style.display = "none";
+          b.innerHTML = "Show more"
+          update_isotope();
+        }
+      }
+
+      update_isotope();
+
+    </script>
+  </body>
 </html>
